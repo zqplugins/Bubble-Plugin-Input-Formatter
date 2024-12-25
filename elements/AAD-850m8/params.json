@@ -1,0 +1,114 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 64,
+        "width": 64
+    },
+    "display": "Input Formatter",
+    "edit_mode_image": "//s3.amazonaws.com/appforest_uf/f1511223595758x180611357558518660/morse-code%20%281%29.png",
+    "fields": {
+        "AAE": {
+            "caption": "Format type",
+            "default_val": "Credit card",
+            "doc": "The format to use for the input",
+            "editor": "Dropdown",
+            "name": "formatType",
+            "options": "Credit card,Date,Thousands,Custom",
+            "rank": 1
+        },
+        "AAF": {
+            "caption": "Input ID",
+            "doc": "The ID of the Input element to format. You must add an ID to your input first. In your project settings, make sure \"Expose the option to add an ID to HTML elements\" is enabled. Then add your ID in your Input's properties.",
+            "editor": "StaticText",
+            "name": "inputID",
+            "rank": 0
+        },
+        "AAG": {
+            "caption": "Delimiter(s)",
+            "default_val": " ",
+            "doc": "Delimiter to use. For multiple delimiters, split with /,/",
+            "editor": "StaticText",
+            "name": "delimiter",
+            "rank": 2
+        },
+        "AAH": {
+            "caption": "Custom Format",
+            "default_val": "3,3,3,2",
+            "doc": "Custom formatting, separated by commas",
+            "editor": "StaticText",
+            "name": "customformat",
+            "optional": false,
+            "rank": 4
+        },
+        "AAI": {
+            "caption": "Prefix",
+            "doc": "Add a prefix to your input",
+            "editor": "StaticText",
+            "name": "prefix",
+            "optional": true,
+            "rank": 5
+        },
+        "AAK": {
+            "caption": "Date Format",
+            "default_val": "m,d,Y",
+            "doc": "The format to use for Date inputs. m for month, d for days, y for years (2 figures), Y for years (4 figures)",
+            "editor": "StaticText",
+            "name": "dateformat",
+            "optional": false,
+            "rank": 6
+        },
+        "AAL": {
+            "caption": "Uppercase",
+            "default_val": false,
+            "doc": "Convert text to uppercase",
+            "editor": "Checkbox",
+            "name": "uppercase",
+            "rank": 7
+        },
+        "AAM": {
+            "caption": "Lowercase",
+            "default_val": false,
+            "doc": "Convert text to lowercase",
+            "editor": "Checkbox",
+            "name": "lowercase",
+            "rank": 8
+        },
+        "AAN": {
+            "caption": "Initial Content (Unformatted)",
+            "doc": "If you need to set a default value to the input that is raw (not preformatted), you should add it here instead of in the Input element's properties.",
+            "editor": "DynamicValue",
+            "name": "rawdefaultvalue",
+            "optional": true,
+            "rank": 3,
+            "value": "text"
+        },
+        "AAR": {
+            "caption": "Only letters",
+            "default_val": false,
+            "doc": "Use only letters for formatting.",
+            "editor": "Checkbox",
+            "name": "only_letters",
+            "rank": 9
+        }
+    },
+    "icon": "ion-more",
+    "property_applications": {
+        "MinWidth": true,
+        "resizable": true
+    },
+    "states": {
+        "AAJ": {
+            "caption": "Unformatted Input",
+            "doc": "Returns the input string without formatting",
+            "name": "rawinput",
+            "value": "text"
+        },
+        "AAO": {
+            "caption": "Unformatted Input (As Number)",
+            "doc": "Returns the input string without formatting as a number",
+            "name": "rawinputnumber",
+            "value": "number"
+        }
+    }
+}

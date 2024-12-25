@@ -1,0 +1,15 @@
+{
+    "assets": {
+        "AAC": {
+            "name": "cleave",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1511219851737x992880603065714300/cleave.min.js"
+        },
+        "AAP": {
+            "name": "cleave.js 9fbf9965ccaded3f67d60a1e30bf560ae7bfb1da",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1517458616207x782115526031702800/cleave.min.js"
+        }
+    },
+    "dependencies": {
+        "use_jquery": true
+    }
+}
